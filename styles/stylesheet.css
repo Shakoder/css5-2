@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    background-color: #07081A;
+}
+
+.comprehensiveContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.comprehensiveContainer>* {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+header {
+    height: 64px;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 1px solid #261C51
+}
+
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1080px;
+}
+
+.headerNav div {
+    display: flex;
+}
+
+.headerNav> :first-child {
+    gap: 12px;
+}
+
+.headerNav> :is(:first-child, :last-child) {
+    align-items: center;
+}
+
+.headerNav :is(span, a), .footerNav a, .footerNav > :last-child *{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.headerNav :is(span, a) {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+.headerNav li:first-child a {
+    color: #8CE900;
+}
+
+.headerNav li:first-child a:hover {
+    color: #6CB200;
+}
+
+.headerNav a:hover:not(.headerHome) {
+    color: blue;
+}
+
+.headerNav a, .footerNav a {
+    transition: all 500ms ease;
+}
+
+.headerNav a:hover, .footerNav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+main {
+    margin-top: 64px;
+    margin-bottom: 200px;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+}
+
+main>* {
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+}
+
+.skinTradeContainer {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skinTradeContainer p {
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 52px;
+}
+
+.skinTradeContainer span {
+    text-transform: uppercase;
+}
+
+.projectContainer {
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242642;
+    min-height: 170px;
+}
+
+.projectContainer>* {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.projectContainer>* :first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8CE900;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.projectContainer>* :first-child span {
+    color: #8CE900;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.projectContainer>* :last-child {
+    color: #C0C0C0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.projectContainer>* :last-child::first-letter {
+    text-transform: capitalize;
+}
+
+footer {
+    min-height: 248px;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.footerNav {
+    flex-basis: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav>* {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footerNav> :first-child {
+    flex-basis: 264px;
+}
+
+.footerNav> :first-child p {
+    color: #C0C0C0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footerNav> :first-child p::first-letter {
+    text-transform: capitalize;
+}
+
+.footerNav> :first-child> :first-child {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.footerNav> :first-child> :first-child span {
+    text-transform: capitalize;
+}
+
+.footerNav ul {
+    flex-direction: column;
+}
+
+.footerNav ul > :first-child a, .footerNav > :last-child > :first-child {
+    color: #8CE900;
+}
+
+address {
+    all: unset;
+}
+
+address:last-child::first-letter {
+    text-transform: capitalize;
+}
+
+address:first-of-type :first-child {
+    text-transform: capitalize;
+}
+
+address:first-of-type :is(span:nth-last-child(2), :last-child) {
+    text-transform: uppercase;
+}
+
+.footerNav a:hover:not(.footerExclude) {
+    color: red;
+}
+
+
+
